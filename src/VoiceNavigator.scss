@@ -1,0 +1,45 @@
+.voice-captions {
+  height: 64px;
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  border: 2px solid;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 600px;
+  padding: 1em 2em;
+  color: #fff;
+  border: 2px solid #222;
+
+  &:after {
+    content: "";
+    height: 16px;
+    width: 16px;
+    background: red;
+    border-radius: 50%;
+    display: none;
+    animation-name: pulse;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    right: 12px;
+    top: 22px;
+  }
+
+  &.listening {
+    &:after {
+      display: unset;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

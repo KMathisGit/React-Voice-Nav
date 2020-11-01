@@ -1,0 +1,35 @@
+nav {
+  background: rgb(26, 28, 34);
+  height: 48px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+
+    li {
+      list-style: none;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin: 0 16px;
+      &.active-route {
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      a {
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        padding: 0 48px;
+        line-height: 48px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.list {
+  border: 1px solid;
+  color: #fff;
+  width: 90%;
+  &-item {
+    cursor: pointer;
+    display: flex;
+    &:nth-child(odd) {
+      background: rgba(255, 255, 255, 0.15);
+    }
+  }
+}

@@ -1,13 +1,13 @@
-import "./App.scss";
+import React from "react";
 
-function App() {
+function Contact(props) {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Home page</p>
+        <p>Contact page</p>
       </header>
     </div>
   );
 }
 
-export default App;
+export default Contact;
